@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS_For_To_DO_List.css">
+    <title>To Do List</title>
+</head>
+<body>
+<div class="block">
+
+    <h2>To DO List</h2>
+    <input type="text" id="input" placeholder="Запишите новое дело..."  onkeypress="handleKeyPress(event)"/>
+    <button type="submit" class="add-todo" id="addTodoButton">Add</button>
+
+</div>
+<div class="myUL">
+    <ul id = "result"></ul>
+</div>
+<div class="filter">
+    <span id = "fullSpan" class="filterBtn" onclick="showAll()">All(<span id ="allCount">0</span>)</span>
+    <span id = "checkedSpan" class="filterBtn" onclick="showChecked()">Completed(<span id = "doneCount">0</span>)</span>
+    <span id = "unfinishedSpan" class="filterBtn" onclick="showUnfinished()">In the process(<span id = "notDoneCount">0</span>)</span>
+
+</div>
+</div>
+<script src="JS.js"></script>
+</body>
+</html>
